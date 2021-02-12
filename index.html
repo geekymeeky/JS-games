@@ -1,70 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/css/style.css">
-</head>
-
-<body>
-    <nav class="navbar navbar-light navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">JS Games</a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ml-sm-auto mr-xs-auto">
-                <li class="nav-item active"><a href="#" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a>
-                </li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-play fa-lg"></span> All Games</a>
-                </li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-info fa-lg"></span> About Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <h3 onmouseover="myfunction()" id="pop">Have a break? Play a game!</h3>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <p class="display-4">Our top picks</p>
-        </div>
-        <div class="row game justify-content-center">
-            <div class="col-12 col-md-3">
-                <a href="rockpaper.html"><img
-                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/people-playing-paper-rock-scissors-royalty-free-illustration-1583269312.jpg?crop=0.936xw:1.00xh;0.0337xw,0&amp;resize=200:*"
-                        alt="image"></a>
-                <p class="mt-3"><strong>Rock-Paper-Scissor</strong></p>
-            </div>
-            <div class="col-12 col-md-3">
-                <a href="tictactoe.html"><img width="200" height="150"
-                        src="static/images/tic-tac-toe/tic-tac-toe-1.png" alt="image"></a>
-                <p class="mt-3"><strong>Tic-tac-toe</strong></p>
-            </div>
-            <div class="col-12 col-md-3">
-                <p>Game3</p>
-            </div>
-            <div class="col-12 col-md-3">
-                <p>Game4</p>
-            </div>
-        </div>
-    </div>
-    <script src="static/js/main.js"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+<!DOCTYPE html> 
+  
+<head> 
+    <meta name="viewport" content= 
+        "width=device-width, initial-scale=1.0"> 
+  
+    <!-- CSS file Included -->
+    <link rel="stylesheet" 
+        type="text/css" href="tic.css"> 
+  
+    <!-- JavaScript file included -->
+    <script src="tic.js"></script> 
+</head> 
+  
+<body> 
+    <div id="main"> 
+        <h1>TIC TAC TOE</h1> 
+  
+        <!-- Game Instructions -->
+        <p id="ins">Game starts by just Tap on  
+            box<br><br>First Player starts as  
+            <b>Player X</b><br>And<br>Second  
+            Player as <b>Player 0</b> 
+        </p> 
+  
+        <br><br> 
+        <!-- 3*3 grid of Boxes -->
+        <input type="text" id="b1" onclick= 
+            "myfunc_3(); myfunc();" readonly> 
+  
+        <input type="text" id="b2" onclick= 
+            "myfunc_4(); myfunc();" readonly> 
+  
+        <input type="text" id="b3" onclick= 
+            "myfunc_5(); myfunc();" readonly> 
+        <br><br> 
+  
+        <input type="text" id="b4" onclick= 
+            "myfunc_6(); myfunc();" readonly> 
+              
+        <input type="text" id="b5" onclick= 
+            "myfunc_7(); myfunc();" readonly> 
+  
+        <input type="text" id="b6" onclick= 
+            "myfunc_8(); myfunc();" readonly> 
+        <br><br> 
+  
+        <input type="text" id="b7" onclick= 
+            "myfunc_9(); myfunc();" readonly> 
+  
+        <input type="text" id="b8" onclick= 
+            "myfunc_10();myfunc();" readonly> 
+  
+        <input type="text" id="b9" onclick= 
+            "myfunc_11();myfunc();" readonly> 
+  
+        <!-- Grid end here  -->
+        <br><br><br> 
+        <!-- Button to reset game -->
+        <button id="but" onclick="myfunc_2()"> 
+            RESET 
+        </button> 
+  
+        <br><br> 
+        <!-- Space to show player turn -->
+        <p id="print"></p> 
+  
+    </div> 
+</body> 
+  
+</html> 
