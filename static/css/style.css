@@ -23,7 +23,7 @@
     box-sizing: border-box;
     width: 95px;
     height: 40px;
-    border: 1px solid dodgerblue;
+    border: 1px solid rgb(0, 0, 0);
     margin: auto;
     border-radius: 4px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
