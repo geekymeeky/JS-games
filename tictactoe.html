@@ -10,11 +10,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">JS Games</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ml-sm-auto mr-xs-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link"><span
+                            class="fa fa-home fa-lg"></span>Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-play fa-lg"></span>All Games</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-sign-in fa-lg"></span>About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <h3 onmouseover="myfunction()" id="pop">Tic Tac Toe</h3>
+            </div>
+        </div>
+    </div>
 <body>
     <div id="main">
-        <h1>TIC TAC TOE</h1>
-
         <!-- Game Instructions -->
         <p id="ins">Game starts by just Tap on
             box<br><br>First Player starts as
