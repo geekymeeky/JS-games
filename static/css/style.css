@@ -9,10 +9,6 @@
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
 }
 
-h1 {
-    color: orangered;
-    font-size: 45px;
-}
 #b1, #b2, #b3, #b4, #b5,
 #b6, #b7, #b8, #b9 {
     width: 80px;
@@ -46,6 +42,6 @@ h1 {
 }
 #ins {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: dodgerblue;
+    color: orangered;
     font-size: 17px;
 }
