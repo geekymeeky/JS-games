@@ -32,6 +32,9 @@
     font-size: 20px;
     cursor: pointer;
 }
+#but:hover{
+    background-color: crimson;
+}
 #print {
     font-family: Verdana,Geneva, Tahoma, sans-serif;
     color: dodgerblue;
