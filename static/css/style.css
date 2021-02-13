@@ -37,14 +37,15 @@
 }
 #print {
     font-family: Verdana,Geneva, Tahoma, sans-serif;
-    color: dodgerblue;
-    font-size: 20px;
+    color: crimson;
+    font-size: 25px;
+    font-weight: bold;
 }
 #main {
     text-align: center;
 }
 #ins {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(131, 11, 11);
+    color: dodgerblue;
     font-size: 20px;
 }
