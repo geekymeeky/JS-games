@@ -15,7 +15,7 @@
     height: 52px;
     margin: auto;
     border: 1px solid gray;
-    border-radius: 6px;
+    border-radius: 10px;
     font-size: 30px;
     text-align: center;
 }
@@ -45,6 +45,6 @@
 }
 #ins {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(104, 3, 3);
+    color:rgb(131, 11, 11);
     font-size: 20px;
 }
