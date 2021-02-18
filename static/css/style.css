@@ -49,3 +49,7 @@
     color: dodgerblue;
     font-size: 20px;
 }
+canvas{
+    width: 100%;
+    height: auto;
+}
