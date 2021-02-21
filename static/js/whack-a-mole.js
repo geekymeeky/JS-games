@@ -1,68 +1,70 @@
-const canvas = document.querySelector('canvas');
-const c = canvas.getContext('2d');
+const score = document.querySelector(".score span"); //within score, within span we're keeping point records
+const holes = document.querySelectorAll(".hole"); //all the 9 holes, All -> coz many holes
+const playb = document.querySelector(".buttons .play");
+const stopb = document.querySelector(".buttons .stop");
+const cursor = document.querySelector(".cursor img");
 
-canvas.width = 800;
-canvas.height = 400;
-canvas.style.backgroundColor = 'green';
 
-class Hammer {
-    constructor(x, y, radius) {
-        this.x = x;
-        this.y = y;
-        this.radius = radius;
-    }
-    draw() {
-        c.beginPath();
-        let rect = canvas.getBoundingClientRect(); 
-        this.x = event.clientX - rect.left; 
-        this.y = event.clientY - rect.top;
-        c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
-        c.fillStyle = '#4a3600';
-        c.fill();
-    }
-    remove(){
-        c.beginPath();
-        c.clearRect(this.x-this.radius, this.y-this.radius, 2*this.radius, 2*this.radius);
-    }
-}
+//positioning the hammer img with cursor
 
-class Mole{
-    constructor(x, y, radius) {
-        this.x = x;
-        this.y = y;
-        this.radius = radius;
-    }
-    draw() {
-        c.beginPath();
-        let rect = canvas.getBoundingClientRect(); 
-        this.x += rect.left-200; 
-        this.y +=rect.top-200;
-        c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
-        c.fillStyle = 'red';
-        c.fill();
-    }
-    remove(){
-        c.beginPath();
-        c.clearRect(this.x-this.radius, this.y-this.radius, 2*this.radius, 2*this.radius);
-    }
-}
+window.addEventListener("mousemove", (event)=>{ //whenever mouse is moved in the screen this func runs, 
+    //console.log(event)     //from console we get pageX and pageY (in pixels)
+    cursor.style.top= event.pageY + "px";   //PageY --> position of cursor from the top of the window
+    cursor.style.left = event.pageX + "px"; //pageX --> position of cursor from the left of the window
 
-moles = [];
-let x=0, y=0;
-function placeMoles(n){
-    for (let i = 0; i < n; i++) {
-        x += 75;
-        console.log(x);
-        moles.push(new Mole(x,canvas.height/2, 20));
-        console.log(moles[i]);
-        moles[i].draw();
-    }
-}
+    window.addEventListener("click", () =>{//whenever we click with the hammer img there will be some animnation
+        cursor.style.animation = "hit 0.1s ease"; ///now define the animation we just created (hit) in css
+        setTimeout(() =>{//the hammer bends only once, to make it multiple time we use this function and remove the animation after 0.1sec
+            cursor.style.removeProperty("animation")
+        }, 100);
+    });
+});
 
-placeMoles(10);
 
-const hammer = new Hammer(0, 0, 20);
-canvas.addEventListener('click', ()=>{
-    hammer.draw();
-    setInterval(() => {  hammer.remove(); }, 700);
-})
+//handling the play button
+
+playb.addEventListener("click", () =>{
+    playb.style.display = "none" //once you click on play button it dissapears
+    stopb.style.display = "inline-block" //and stop button is diplayed on screen
+
+    //start the game
+
+    let hole;
+    let points = 0;
+
+    const startGame = setInterval(() =>{ //after every 0.7 sec for infinite no. of times until we stop it
+        //selecting random holes to display the mole in that
+        const a= Math.floor(Math.random()* 9);//for each hole
+        hole = holes[a];
+
+        //creating the img tag
+        let image = document.createElement("img"); //creating image object
+        image.setAttribute("src" , "static/images/whack-a-mole/mole.png"); //giving attribute name and location
+        image.setAttribute("class", "mole"); //give image a class named mole
+
+        setTimeout(() => {//removing the mole image once displayed
+            hole.removeChild(image);
+        }, 600);
+
+        //append and remove child timing should be different
+
+        //inserting the image in selected random hole
+        hole.appendChild(image);
+
+    }, 700);
+
+    //setting the points
+    window.addEventListener("click",(event) =>{
+        if(event.target == hole) score.innerText = ++points;// if we click on the random hole no. 'hole' it will increase the point value
+    });
+
+    //handling the stop button
+
+    stopb.addEventListener("click",() =>{
+        clearInterval(startGame);//on clicking the stop button, it stops infinite startGame loop
+
+        playb.style.display = "inline-block"//play button is diplayed on screen 
+        stopb.style.display = "none" //once you click on stop button it dissapears
+        score.innerText = 0;
+    });
+});
