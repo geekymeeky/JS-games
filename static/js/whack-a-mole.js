@@ -44,14 +44,14 @@ playb.addEventListener("click", () =>{
 
         setTimeout(() => {//removing the mole image once displayed
             hole.removeChild(image);
-        }, 600);
+        }, 800);
 
         //append and remove child timing should be different
 
         //inserting the image in selected random hole
         hole.appendChild(image);
 
-    }, 700);
+    }, 1000);
 
     //setting the points
     window.addEventListener("click",(event) =>{
