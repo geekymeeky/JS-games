@@ -5,11 +5,10 @@
     font-family: sans-serif;
     cursor: none; /*to dissapear the cursor arrow*/
 }
-body{
-    background-color: darkgreen;
+#whack-board {
     color: white;       /*text color*/
-    display: flex;        /*aligning everything to horizontal center*/
-    justify-content: center;
+    background-color: darkgreen;      /*aligning everything to horizontal center*/
+    justify-self: center;
 }
 .heading{
     font-size: 40px;
@@ -20,6 +19,11 @@ body{
     font-size: 20px;
     text-align: center;
     padding: 20px;
+}
+#hole-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .holes{
     display: grid;  

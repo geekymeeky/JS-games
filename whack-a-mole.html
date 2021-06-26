@@ -4,29 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/whack-a-mole.css">
     <title>Whack a Mole</title>
 </head>
 <body>
-
-    <div class="container">
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">JS Games</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ml-sm-auto mr-xs-auto">
+                <li class="nav-item"><a href="./index.html" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-play fa-lg"></span> All Games</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-info fa-lg"></span> About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" id="whack-board">
         <div class="heading">
             <p>Whack a Mole game</p>
         </div>
         <div class="score">
             Points: <span>0</span>
         </div>
-        <div class="holes">
-            <div class="hole 1"></div>
-            <div class="hole 2"></div>
-            <div class="hole 3"></div>
-            <div class="hole 4"></div>
-            <div class="hole 5"></div>
-            <div class="hole 6"></div>
-            <div class="hole 7"></div>
-            <div class="hole 8"></div>
-            <div class="hole 9"></div>
-        </div>
+        <section id="hole-section">
+            <div class="holes">
+                <div class="hole 1"></div>
+                <div class="hole 2"></div>
+                <div class="hole 3"></div>
+                <div class="hole 4"></div>
+                <div class="hole 5"></div>
+                <div class="hole 6"></div>
+                <div class="hole 7"></div>
+                <div class="hole 8"></div>
+                <div class="hole 9"></div>
+            </div>
+        </section>
         <div class="buttons">
             <button class="play">PLAY</button>
             <button class="stop">STOP</button>
