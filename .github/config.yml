@@ -26,7 +26,6 @@ checkPullRequestTemplate: true
 # Keys must be lowercase. Valid values are 'issue' and 'pullRequest'
 requestInfoOn:
   pullRequest: true
-  issue: true
 
 # *OPTIONAL* Add a list of people whose Issues/PRs will not be commented on
 # keys must be GitHub usernames
