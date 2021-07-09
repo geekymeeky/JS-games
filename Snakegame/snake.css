@@ -16,6 +16,13 @@ body{
     height: 85vmin;
     border: 1px solid black;
     border-radius: 0.5rem;
+    display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(20, 1fr);
+}
+.head{
+    background-color: red;
+}
+.food{
+    background-color: blue;
 }
