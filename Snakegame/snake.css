@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    background: url('/Snakegame/assets/bg.jpg');
+    background: url('/Snakegame/assets/bg.jpg') no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
