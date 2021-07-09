@@ -4,4 +4,7 @@
 }
 body{
     background: url('/Snakegame/assets/bg.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
