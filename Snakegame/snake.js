@@ -20,7 +20,8 @@ function main(curtime) {
 }
 
 function gameEngine(){
-    
+    // Part 1: Updating the Snake Array
+    // Part 2: Render the Snake and Food
 }
 
 
