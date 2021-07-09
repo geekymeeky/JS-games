@@ -33,7 +33,7 @@ body{
     border-radius: 8px;
 }
 .snake{
-    background-color: purple;
+    background-color: rgb(9, 0, 128);
     border: .25vmin solid white;
     border-radius: 12px;
 }
