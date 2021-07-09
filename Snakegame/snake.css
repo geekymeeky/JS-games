@@ -16,4 +16,6 @@ body{
     height: 85vmin;
     border: 1px solid black;
     border-radius: 0.5rem;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
 }
