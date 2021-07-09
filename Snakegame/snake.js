@@ -10,10 +10,18 @@ let lastPaintTime = 0;
 //Game Functions
 function main(curtime) {
     window.requestAnimationFrame(main);
-    if((curtime - lastPaintTime)/1000 < 1/speed);
     console.log(curtime);
+    if((curtime - lastPaintTime)/1000 < 1/speed){
+        return;
+    }
+    lastPaintTime = curtime;
+    gameEngine();
+    
 }
 
+function gameEngine(){
+    
+}
 
 
 
