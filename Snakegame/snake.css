@@ -4,7 +4,16 @@
 }
 body{
     background: url('/Snakegame/assets/bg.jpg') no-repeat;
+    min-height: 100vh;
+    background-size: 110vw 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.board{
+    background: linear-gradient(294deg, rgb(229, 238, 149) 0%, rgb(142, 241, 154) 78%);
+    width: 90vmin;
+    height: 85vmin;
+    border: 1px solid black;
+    border-radius: 0.5rem;
 }
