@@ -10,7 +10,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.board{
+#board{
     background: linear-gradient(294deg, rgb(229, 238, 149) 0%, rgb(142, 241, 154) 78%);
     width: 90vmin;
     height: 85vmin;
