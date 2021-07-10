@@ -2,7 +2,7 @@
 let inputDir = {x: 0, y: 0}; 
 const foodSound = new Audio('/assets/food.mp3');
 const gameOverSound = new Audio('/assets/gameover.mp3');
-const moveSound = new Audio('/assets/move/mp3');
+const moveSound = new Audio('/assets/move.mp3');
 const musicSound = new Audio('/assets/music.mp3');
 let speed = 19;
 let score = 0;
@@ -32,7 +32,7 @@ function isCollide(snake) {
         }
     }
     // If you bump into the wall
-    if(snake[0].x >= 18 || snake[0].x <=0 || snake[0].y >= 18 || snake[0].y <=0){
+    if(snake[0].x > 19 || snake[0].x <=0 || snake[0].y > 19 || snake[0].y <=0){
         return true;
     }
         
