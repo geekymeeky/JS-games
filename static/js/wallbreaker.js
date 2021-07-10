@@ -163,6 +163,7 @@ function moveBall() {
     showAllBricks();
     score = 0;
     gameoversound.play();
+    alert('Game over!! click ok to play again')
   }
 }
 
