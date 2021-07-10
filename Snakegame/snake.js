@@ -1,9 +1,5 @@
 // Game Constants & Variables
 let inputDir = {x: 0, y: 0}; 
-const foodSound = new Audio('/assets/food.mp3');
-const gameOverSound = new Audio('/assets/gameover.mp3');
-const moveSound = new Audio('/assets/move.mp3');
-const musicSound = new Audio('/assets/music.mp3');
 let speed = 19;
 let score = 0;
 let lastPaintTime = 0;
@@ -42,12 +38,9 @@ function isCollide(snake) {
 function gameEngine(){
     // Part 1: Updating the snake array & Food
     if(isCollide(snakeArr)){
-        gameOverSound.play();
-        musicSound.pause();
         inputDir =  {x: 0, y: 0}; 
         alert("Game Over. Press any key to play again!");
         snakeArr = [{x: 13, y: 15}];
-        musicSound.play();
         score = 0; 
     }
 

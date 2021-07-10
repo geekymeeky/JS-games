@@ -3,14 +3,6 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background: url('/Snakegame/assets/bg.jpg') no-repeat;
-    min-height: 100vh;
-    background-size: 110vw 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 #board{
     background: linear-gradient(294deg, rgb(229, 238, 149) 0%, rgb(142, 241, 154) 78%);
     width: 90vmin;
@@ -39,7 +31,7 @@ body{
 }
 #hiscoreBox{
     position: absolute;
-    top: 59px;
+    top: 100px;
     right: 140px;
     font-size: 39px;
     font-weight: bold;
@@ -47,9 +39,24 @@ body{
 }
 #scoreBox{
     position: absolute;
-    top: 9px;
+    top: 60px;
     right: 200px;
     font-size: 39px;
     font-weight: bold;
     font-family: 'New Tegomin', serif;
+}
+.snakeboard{
+    background: url('/Snakegame/assets/bg.jpg') no-repeat;
+    min-height: 100vh;
+    background-size: 110vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    height: 10%;
+    font-size: medium;
+}
+.top-bar{
+    font-size: 20px;
 }
