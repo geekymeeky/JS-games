@@ -46,7 +46,7 @@
     font-family: 'New Tegomin', serif;
 }
 .snakeboard{
-    background: url('/Snakegame/assets/bg.jpg') no-repeat;
+    background: url('../images/Snakegame/bg.jpg') no-repeat;
     min-height: 100vh;
     background-size: 110vw 100vh;
     display: flex;
