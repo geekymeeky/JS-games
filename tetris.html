@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tetris Game</title>
+    <style>
+      html {
+        background: #f337f7;
+      }
+      h1 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-style: italic;
+        text-align: center;
+      }
+      #board {
+        margin: 0 auto;
+        display: block;
+        border: 2px solid black;
+        border-bottom: 10px solid green;
+        background: white;
+      }
+      #lines {
+        display: block;
+        width: 240px;
+        margin: 0 auto;
+        margin-top: 2em;
+        color: #444;
+        font-size: 1.5em;
+        text-align: center;
+      }
+      .instruction-heading {
+        position: absolute;
+        margin-left: 11em;
+        margin-top: 9em;
+      }
+      .instructions {
+        position: absolute;
+        margin-top: 11em;
+        font-style: italic;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tetris Game</h1>
+    <div class="instruction-heading">
+      <h2>Instructions:</h2>
+    </div>
+    <div class="instructions">
+      <ul>
+        <h4>To change tetrominoes, press up key.</h4>
+        <h4>To move to left, press left key.</h4>
+        <h4>To move to right, press right key.</h4>
+        <h4>To move to down, press down key.</h4>
+        <h4>You can check how many lines you have completed in the top.</h4>
+        <h4>If you run out of moves, the game will be ended.</h4>
+      </ul>
+    </div>
+    <span id="lines">Lines: 0</span>
+    <canvas id="board"> </canvas>
+    <script src="static/js/tetrominoes.js"></script>
+    <script src="static/js/tetris.js"></script>
+  </body>
+</html>
