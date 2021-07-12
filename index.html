@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 </head>
 
-<body>
+<body id="dm">
     <nav class="navbar navbar-light navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">JS Games</a>
@@ -21,11 +22,14 @@
         </div>
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ml-sm-auto mr-xs-auto">
-                <li class="nav-item active"><a href="#" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a>
                 </li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-play fa-lg"></span> All Games</a>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-play fa-lg"></span><br>All Games</a>
                 </li>
                 <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-info fa-lg"></span> About Us</a>
+                </li>
+                <li class="nav-item">
+                    <input type="checkbox" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
                 </li>
             </ul>
         </div>
@@ -59,9 +63,6 @@
                 <p class="mt-3"><strong>Whack a mole!</strong></p>
             </div>
             <div class="col-12 col-md-3">
-<<<<<<< HEAD
-               
-=======
                 <a href="wallbreaker.html">
                  <img src="static/images/WallBreaker/WallBreaker.png" alt="Wall Breaker" width="200" height="150">
                 </a>
@@ -74,13 +75,17 @@
                  <img src="static/images/memory-game/display-img.jpg" alt="Memory Game" width="200" height="150">
                 </a>
                 <p class="mt-3"><strong>Memory Game</strong></p>
-        
->>>>>>> 1601a8575cb7c33a82900b87e8b78bfd8d2804ff
             </div>
             <div class="col-12 col-md-3">
-                <a href="/Snakegame/snakegame.html"><img width="200" height="150"
+                <a href="snakegame.html"><img width="200" height="150"
                     src="https://i.pinimg.com/originals/b0/20/57/b020573677505d9d5dde2fdf21e515aa.png" alt="image"></a>
             <p class="mt-3"><strong>Snake Game</strong></p>
+            </div>
+            <div class="col-12 col-md-3">
+                <a href="dino.html">
+                    <img src="static/images/dino/dinogame.png" alt="Dino Game" width="200" height="150">
+                </a>
+                <p class="mt-3"><strong>Dino Game</strong></p>
             </div>
         </div>
     </div>
