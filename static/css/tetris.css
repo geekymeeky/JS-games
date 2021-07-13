@@ -1,0 +1,47 @@
+html {
+  background: #f337f7;
+}
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-align: center;
+}
+button {
+  background-color: #f337f7;
+  border-radius: 3px;
+  padding: 1em;
+  cursor: pointer;
+}
+button:hover {
+  background-color: white;
+}
+a {
+  text-decoration: none;
+}
+#board {
+  margin: 0 auto;
+  display: block;
+  border: 2px solid black;
+  border-bottom: 10px solid green;
+  background: white;
+}
+#lines {
+  display: block;
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 2em;
+  color: #444;
+  font-size: 1.5em;
+  text-align: center;
+}
+.instruction-heading {
+  position: absolute;
+  margin-left: 11em;
+  margin-top: 9em;
+}
+.instructions {
+  position: absolute;
+  margin-top: 11em;
+  font-style: italic;
+  text-align: center;
+}
