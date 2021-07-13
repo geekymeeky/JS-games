@@ -33,4 +33,4 @@ You can view different types of games in the webpage and play them as many times
     <li>Javascript</li>
   </ul>
 <h2>Screenshots📸</h2>
-<img src="./static/images/Js-gamesCollage.png">
+<img alt="collage preview" src="./static/images/Js-gamesCollage.png">
