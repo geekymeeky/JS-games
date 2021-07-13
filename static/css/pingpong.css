@@ -1,0 +1,22 @@
+*{
+    /*Adding a reset to all items*/
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image:url("../images/pingpong/tabletennis.jpg");
+}
+.banner{
+    font-size: 25px;
+    font-style: italic;
+}
+#pingpong{
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%);
+}
