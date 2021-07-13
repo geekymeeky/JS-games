@@ -1,9 +1,10 @@
 ![JS-games](https://socialify.git.ci/geekymeeky/JS-games/image?description=1&forks=1&issues=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
 
 <h2>Introduction🤩</h2>
+
 <p>JS-games is an exciting web application which keeps you updated of the Javascript based fun games, lightens up your mood 
 by letting you enjoy the addictive games, and provides an amazing visualisation.</p>
-<br>
+
 <h2>Features✨</h2>
 <ul>
  <li>User Friendly Interface</li>
