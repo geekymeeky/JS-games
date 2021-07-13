@@ -61,7 +61,7 @@
     top: 0px;
     left: 0px;
     border-radius: 5px;
-    background-image: url(images/car2.png);
+    background-image: url(../images/car_game/car2.png);
     background-size: cover;
     z-index: 99;
     text-align: center;
@@ -73,7 +73,7 @@
     bottom: 60px;
     left: 250px;
     border-radius: 5px;
-    background-image: url(images/car1.png);
+    background-image: url(../images/car_game/car1.png);
     background-size: cover;
     z-index: 100;
 }
