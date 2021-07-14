@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+#board{
+    background: linear-gradient(294deg, rgb(229, 238, 149) 0%, rgb(142, 241, 154) 78%);
+    width: 90vmin;
+    height: 85vmin;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+.head{
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+.snake{
+    background-color: rgb(9, 0, 128);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 100px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#scoreBox{
+    position: absolute;
+    top: 60px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+.snakeboard{
+    background: url('../images/Snakegame/bg.jpg') no-repeat;
+    min-height: 100vh;
+    background-size: 110vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    height: 10%;
+    font-size: medium;
+}
+.top-bar{
+    font-size: 20px;
+}

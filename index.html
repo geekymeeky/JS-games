@@ -1,72 +1,218 @@
-<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/css/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+  </head>
 
-<body>
+  <body id="dm">
     <nav class="navbar navbar-light navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">JS Games</a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ml-sm-auto mr-xs-auto">
-                <li class="nav-item active"><a href="#" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a>
-                </li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-play fa-lg"></span> All Games</a>
-                </li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-info fa-lg"></span> About Us</a>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <a class="navbar-brand" href="#">JS Games</a>
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ml-sm-auto mr-xs-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><span class="fa fa-home fa-lg"></span> Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><span class="fa fa-play fa-lg"></span><br />All Games</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><span class="fa fa-info fa-lg"></span> About Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <input
+              type="checkbox"
+              class="dark_toggler"
+              aria-label="Toggle Light Mode"
+              onclick="toggle_light_mode()"
+            />
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <h3 id="pop">Have a break? Play a game!</h3>
-            </div>
+      <div class="container">
+        <div class="row">
+          <h3 id="pop">Have a break? Play a game!</h3>
         </div>
+      </div>
     </div>
     <div class="container">
-        <div class="row">
-            <p class="display-4">Our top picks</p>
+      <div class="row">
+        <p class="display-4">Our top picks</p>
+      </div>
+      <div class="row game justify-content-center">
+        <div class="col-12 col-md-3">
+          <a href="rockpaper.html"
+            ><img
+              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/people-playing-paper-rock-scissors-royalty-free-illustration-1583269312.jpg?crop=0.936xw:1.00xh;0.0337xw,0&amp;resize=200:*"
+              alt="image"
+          /></a>
+          <p class="mt-3"><strong>Rock-Paper-Scissor</strong></p>
         </div>
-        <div class="row game justify-content-center">
-            <div class="col-12 col-md-3">
-                <a href="rockpaper.html"><img
-                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/people-playing-paper-rock-scissors-royalty-free-illustration-1583269312.jpg?crop=0.936xw:1.00xh;0.0337xw,0&amp;resize=200:*"
-                        alt="image"></a>
-                <p class="mt-3"><strong>Rock-Paper-Scissor</strong></p>
-            </div>
-            <div class="col-12 col-md-3">
-                <a href="tictactoe.html"><img width="200" height="150"
-                        src="static/images/tic-tac-toe/tic-tac-toe-1.png" alt="image"></a>
-                <p class="mt-3"><strong>Tic-tac-toe</strong></p>
-            </div>
-            <div class="col-12 col-md-3">
-                <a href="whack-a-mole.html"><img width="200" height="150"
-                        src="https://media.istockphoto.com/illustrations/game-to-hit-the-mole-illustration-id1153033854" alt="image"></a>
-                <p class="mt-3"><strong>Whack a mole!</strong></p>
-            </div>
-            <div class="col-12 col-md-3">
-                <p>Game4</p>
-            </div>
+        <div class="col-12 col-md-3">
+          <a href="tictactoe.html"
+            ><img
+              width="200"
+              height="150"
+              src="static/images/tic-tac-toe/tic-tac-toe-1.png"
+              alt="image"
+          /></a>
+          <p class="mt-3"><strong>Tic-tac-toe</strong></p>
         </div>
+        <div class="col-12 col-md-3">
+          <a href="whack-a-mole.html"
+            ><img
+              width="200"
+              height="150"
+              src="https://media.istockphoto.com/illustrations/game-to-hit-the-mole-illustration-id1153033854"
+              alt="image"
+          /></a>
+          <p class="mt-3"><strong>Whack a mole!</strong></p>
+        </div>
+        <div class="col-12 col-md-3">
+          <a href="wallbreaker.html">
+            <img
+              src="static/images/WallBreaker/WallBreaker.png"
+              alt="Wall Breaker"
+              width="200"
+              height="150"
+            />
+          </a>
+          <p class="mt-3"><strong>Wall Breaker</strong></p>
+        </div>
+      </div>
+      <div class="row game justify-content-center">
+        <div class="col-12 col-md-3">
+          <a href="memory-game.html">
+            <img
+              src="static/images/memory-game/display-img.jpg"
+              alt="Memory Game"
+              width="200"
+              height="150"
+            />
+          </a>
+          <p class="mt-3"><strong>Memory Game</strong></p>
+        </div>
+        <div class="col-12 col-md-3">
+          <a href="snakegame.html"
+            ><img
+              width="200"
+              height="150"
+              src="https://i.pinimg.com/originals/b0/20/57/b020573677505d9d5dde2fdf21e515aa.png"
+              alt="image"
+          /></a>
+          <p class="mt-3"><strong>Snake Game</strong></p>
+        </div>
+        <div class="col-12 col-md-3">
+          <a href="./connect-four-game.html"
+            ><img
+              width="200"
+              height="150"
+              src="./static/images/connect-four/connect-four.png"
+              alt="image"
+          /></a>
+          <p class="mt-3"><strong>Connect-Four Game</strong></p>
+        </div>
+        <div class="col-12 col-md-3">
+          <a href="dino.html">
+            <img
+              src="static/images/dino/dinogame.png"
+              alt="Dino Game"
+              width="200"
+              height="150"
+            />
+          </a>
+          <p class="mt-3"><strong>Dino Game</strong></p>
+        </div>
+      </div>
+      <div class="row game justify-content-center">
+        <div class="col-12 col-md-3">
+          <a href="simon_game.html"
+            ><img
+              width="200"
+              height="150"
+              src="static/images/Simon-Game/Simon_game.png"
+              alt="image"
+          /></a>
+          <p class="mt-3"><strong>Simon Game</strong></p>
+        </div>
+        <div class="col-12 col-md-3">
+          <a href="flips-me.html">
+            <img
+              src="static/images/flips-me/flip.jpg"
+              alt="Flip Me Game"
+              width="200"
+              height="150"
+            />
+          </a>
+          <p class="mt-3"><strong>Flip-Me Game</strong></p>
+        </div>
+        <div class="col-12 col-md-3">
+          <a href="tetris.html">
+            <img
+              src="static/images/tetris/tetris.png"
+              alt="Tetris Game"
+              width="200"
+              height="150"
+            />
+          </a>
+          <p class="mt-3"><strong>Tetris</strong></p>
+        </div>
+        <div class="col-12 col-md-3">
+          <a href="./hangman.html"><img width="200" height="150" src="./static/images/hangman/hangman.png" alt="image"></a>
+          <p class="mt-3"><strong>Hangman Game</strong></p>
+      </div>
+      <div class="col-12 col-md-3">
+        <a href="./pingpong.html"><img width="200" height="150" src="./static/images/pingpong/pingpong.jpg" alt="image"></a>
+        <p class="mt-3"><strong>Ping Pong Game</strong></p>
+    </div>
+      </div>
     </div>
     <script src="static/js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
