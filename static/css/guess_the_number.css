@@ -1,13 +1,16 @@
-.main-heading{
+    .main-heading{
         font-family: 'Press Start 2P', cursive;
         font-size:48px
     }
     body{
-        text-align: center;
-        margin:10%;
+        margin-top: 5%;
         font-family: 'Orbitron', sans-serif;
         background-color: black;
         color:white;
+    }
+    .container{
+        text-align: center;
+        margin:10%;
     }
     .text{
         font-size: 24px;
@@ -19,16 +22,18 @@
         height: 100px;    
     }
 
-    #submit-btn{
+    #submit-btn,#home-back-btn{
         border-radius: 16px;
-        font-size: 24px;
+        font-size: 18px;
+        font-family: 'Orbitron', sans-serif;
         padding:1%;
         color:white;
         box-shadow: 4px 8px 4px 1px rgba(255,255,255,0.5);
         margin-top:10%;
         background-color: black;
+        text-decoration: none;
         border:2px solid white;
     }
-    #submit-btn:focus{
+    #submit-btn:focus,  #home-back-btn:focus{
         box-shadow: inset 4px 8px 4px 1px rgba(255,255,255,0.5);
     }
