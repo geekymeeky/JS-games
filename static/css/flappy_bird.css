@@ -1,0 +1,67 @@
+.back-option{
+    float: left;;
+}
+
+#home{
+    margin: 30px;
+    height: 48px;
+    width: 150px;
+    background-color: chartreuse;
+    border: 2px solid black;
+}
+
+#home:hover{
+    background-color: goldenrod;
+}
+
+#home h3{
+    font-size: 15px;
+}
+
+p{
+    margin: 30px;
+    font-size: 20px;
+}
+
+.game{
+    margin-left: 500px;
+    width: 500px;
+    height: 730px;
+    position: absolute;
+}
+.sky{
+    width: 500px;
+    height: 580px;
+    position: absolute;
+    background-image: url(../images/flappy_bird/bg.png);
+}
+.ground{
+    top: 580px;
+    width: 500px;
+    height: 150px;
+    background-image: url(../images/flappy_bird/fg.png);
+    position: absolute;
+    /*Putting the pipe below ground. z-index makes it appear closer to us*/
+    z-index: +1;
+}
+.bird{
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    background-image: url(../images/flappy_bird/bird.png);
+}
+
+.obstacle{
+    width: 60px;
+    height: 300px;
+    background-image: url(../images/flappy_bird/pipeNorth.png);
+    position: absolute;
+}
+
+.topObstacle{
+    width: 60px;
+    height: 300px;
+    background-image: url(../images/flappy_bird/pipeSouth.png);
+    position: absolute;
+    transform: rotate(180deg);
+}
