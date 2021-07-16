@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>JS-GAMES</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="icon" href="static/images/favicon.png">
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 </head>
 
 <body id="dm">
     <nav class="navbar navbar-light navbar-expand-lg">
+      <div class="header-logo">
+        <a href="index.html"><img class="image" img src="static/images/favicon.png"></a>
+     </div>
         <div class="container">
+
             <a class="navbar-brand" href="#">JS Games</a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navMenu">
           <span class="navbar-toggler-icon"></span>
@@ -22,18 +27,14 @@
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ml-sm-auto mr-xs-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a
-            >
+                    <a href="index.html" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#games" class="nav-link"><span class="fa fa-play fa-lg"></span>  Games</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link"
-              ><span class="fa fa-play fa-lg"></span><br />All Games</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"
-              ><span class="fa fa-info fa-lg"></span> About Us</a
-            >
+              ><span class="fa fa-info fa-lg"></span> About</a>
           </li>
           <li class="nav-item">
             <input
@@ -53,34 +54,37 @@
         </div>
       </div>
     </div>
+
+    <section id="games">
+
+
     <div class="container">
       <div class="row">
         <p class="display-4">Our top picks</p>
       </div>
       <div class="row game justify-content-center">
         <div class="col-12 col-md-3">
-          <a href="rockpaper.html"><img
+          <a href="rockpaper.html" target="_blank"><img
               src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/people-playing-paper-rock-scissors-royalty-free-illustration-1583269312.jpg?crop=0.936xw:1.00xh;0.0337xw,0&amp;resize=200:*"
-              alt="image"/>
+              target="_blank"  alt="image"/>
           </a>
           <p class="mt-3"><strong>Rock-Paper-Scissor</strong></p>
         </div>
         <div class="col-12 col-md-3">
-            <a href="./3d-tictactoe.html"><img width="200" height="150" 
-              src="./static/images/3d-tictactoe/logo.png" 
-              alt="image" />
+            <a href="./3d-tictactoe.html" target="_blank"><img width="200" height="150" 
+              src="./static/images/3d-tictactoe/logo.png"  alt="image" target="_blank" />
             </a>
             <p class="mt-3"><strong>Tic Tac Toe</strong></p>
         </div>
         <div class="col-12 col-md-3">
-            <a href="whack-a-mole.html"><img width="200" height="150" 
+            <a href="whack-a-mole.html" target="_blank"><img width="200" height="150" 
               src="https://media.istockphoto.com/illustrations/game-to-hit-the-mole-illustration-id1153033854" 
-              alt="image" /></a>
+              target="_blank" alt="image" /></a>
             <p class="mt-3"><strong>Whack a mole!</strong></p>
         </div>
         <div class="col-12 col-md-3">
-            <a href="wallbreaker.html"><img width="200" height="150" 
-                src="static/images/WallBreaker/WallBreaker.png" 
+            <a href="wallbreaker.html" target="_blank"><img width="200" height="150" 
+                src="static/images/WallBreaker/WallBreaker.png"  target="_blank"
                 alt="Wall Breaker" />
             </a>
             <p class="mt-3"><strong>Wall Breaker</strong></p>
@@ -88,29 +92,31 @@
         </div>
         <div class="row game justify-content-center">
             <div class="col-12 col-md-3">
-                <a href="memory-game.html"><img width="200" height="150"  
-                  src="static/images/memory-game/display-img.jpg"
+                <a href="memory-game.html" target="_blank"><img width="200" height="150"  
+                  src="static/images/memory-game/display-img.jpg" target="_blank"
                   alt="Memory Game" />
                 </a>
                 <p class="mt-3"><strong>Memory Game</strong></p>
             </div>
+
             <div class="col-12 col-md-3">
-                <a href="snakegame.html"><img width="200" height="150" 
+                <a href="snakegame.html" target="_blank"><img width="200" height="150" 
                   src="https://i.pinimg.com/originals/b0/20/57/b020573677505d9d5dde2fdf21e515aa.png" 
-                  alt="image" />
+                  target="_blank"  alt="image" />
                 </a>
                 <p class="mt-3"><strong>Snake Game</strong></p>
             </div>
+
             <div class="col-12 col-md-3">
-                <a href="./connect-four-game.html"><img width="200" height="150" 
-                  src="./static/images/connect-four/connect-four.png" 
+                <a href="./connect-four-game.html" target="_blank"><img width="200" height="150" 
+                  src="./static/images/connect-four/connect-four.png"  target="_blank"
                   alt="image" />
                 </a>
                 <p class="mt-3"><strong>Connect-Four Game</strong></p>
             </div>
             <div class="col-12 col-md-3">
-                <a href="dino.html"><img width="200" height="150"
-                  src="static/images/dino/dinogame.png" 
+                <a href="dino.html" target="_blank"><img width="200" height="150"
+                  src="static/images/dino/dinogame.png" target="_blank"
                   alt="Dino Game" />
                 </a>
                 <p class="mt-3"><strong>Dino Game</strong></p>
@@ -118,29 +124,33 @@
         </div>
         <div class="row game justify-content-center">
             <div class="col-12 col-md-3">
-                <a href="simon_game.html"><img width="200" height="150" 
-                  src="static/images/Simon-Game/Simon_game.png" 
+                <a href="simon_game.html"target="_blank"><img width="200" height="150" 
+                  src="static/images/Simon-Game/Simon_game.png"  target="_blank"
                   alt="image" />
                 </a>
                 <p class="mt-3"><strong>Simon Game</strong></p>
             </div>
+
+
             <div class="col-12 col-md-3">
-                <a href="flips-me.html"><img width="200" height="150"
-                  src="static/images/flips-me/flip.jpg" 
+                <a href="flips-me.html" target="_blank"><img width="200" height="150"
+                  src="static/images/flips-me/flip.jpg"  target="_blank"
                   alt="Flip Me Game" />
                 </a>
                 <p class="mt-3"><strong>Flip-Me Game</strong></p>
             </div>
+
             <div class="col-12 col-md-3">
-                <a href="tetris.html"><img width="200" height="150"
-                  src="static/images/tetris/tetris.png" 
+                <a href="tetris.html" target="_blank"><img width="200" height="150"
+                  src="static/images/tetris/tetris.png"  target="_blank"
                   alt="Tetris Game" />
                 </a>
                 <p class="mt-3"><strong>Tetris</strong></p>
             </div>
+
             <div class="col-12 col-md-3">
-                <a href="./hangman.html"><img width="200" height="150" 
-                  src="./static/images/hangman/hangman.png" 
+                <a href="./hangman.html" target="_blank"><img width="200" height="150" 
+                  src="./static/images/hangman/hangman.png"  target="_blank"
                   alt="image">
                 </a>
                 <p class="mt-3"><strong>Hangman Game</strong></p>
@@ -148,20 +158,20 @@
         </div>
         <div class="row game justify-content-center">
           <div class="col-12 col-md-3">
-            <a href="./pingpong.html"><img width="200" height="150" src="./static/images/pingpong/pingpong.jpg" alt="image"></a>
+            <a href="./pingpong.html" target="_blank"><img width="200" height="150" src="./static/images/pingpong/pingpong.jpg" target="_blank"alt="image"></a>
             <p class="mt-3"><strong>Ping Pong Game</strong></p>
           </div>
           <div class="col-12 col-md-3">
-            <a href="./flappy_bird.html"><img width="200" height="150" src="./static/images/flappy_bird/flappy_bird.PNG" alt="image"></a>
+            <a href="./flappy_bird.html" target="_blank"><img width="200" height="150" src="./static/images/flappy_bird/flappy_bird.PNG"target="_blank" alt="image"></a>
             <p class="mt-3"><strong>Flappy Bird Game</strong></p>
           </div>
           <div class="col-12 col-md-3">
-          <a href="./Car_game.html"><img width="200" height="150" src="./static/images/car_game/car_game.png" alt="image"></a>
+          <a href="./Car_game.html"target="_blank"><img width="200" height="150" src="./static/images/car_game/car_game.png" target="_blank"  alt="image"></a>
           <p class="mt-3"><strong>Car Game</strong></p>
 
           </div>
           <div class="col-12 col-md-3">
-            <a href="Guess_the_number.html">
+            <a href="Guess_the_number.html" target="_blank">
               <img
                 src="static/images/Guess the Number/guess the number.png"
                 alt="Guess The Number"
@@ -171,22 +181,33 @@
             </a>
             <p class="mt-3"><strong>Guess The Number</strong></p>
               </div>
-            </div>
-      <div class="row game justify-content-center">
+             
+               
+    <div class="col-12 col-md-3">
+      <a href="reaction.html"
+        ><img width="200" height="150"
+          src="./static/images/reaction.PNG"
+          alt="image"
+      /></a>
+      <p class="mt-3"><strong>Reaction Time Game</strong></p>
+    </div>
+
           <div class="col-12 col-md-3">
-              <a href="2048game.html">
+              <a href="2048game.html" target="_blank">
                 <img
                   src="static/images/2048game/2048game.png"
-                  alt="2048 Game"
+                  alt="2048 Game" target="_blank"
                   width="200"
                   height="150"
                 />
               </a>
               <p class="mt-3"><strong>2048 Game</strong></p>
           </div>
+
       </div>
     </div>
   </div>
+</section>
     <script src="static/js/main.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

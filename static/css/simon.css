@@ -1,7 +1,12 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #06284d;
+  COLOR: white;
 }
+span{
+  color:white;
+}
+
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
