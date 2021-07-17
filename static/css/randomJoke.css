@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+  background-color: rgb(142, 92, 189);
+  color: white;
+  border-radius: 10px;
+  padding: 2px 30px;
+  max-width: 100%;
+  width: 650px;
+  height: 350px;
+  text-align: center;
+  box-shadow:  0 10px 20px rgb(124, 75, 16);
+}
+h2{
+    font-size: 2em;
+    margin :0;
+    font-weight: bold;
+    opacity: 0.9;
+    padding: 20px 30px;
+}
+#joke{
+    font-size: 30px;
+    line-height: 40px;
+    margin: 50px 0;
+    max-width: 600px;
+}
+.btn{
+    background-color:  white;
+    color:  rgb(142, 92, 189);
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:active{
+    transform: scale(0.9);
+}
+.btn:focus{
+    outline: 0;
+}
