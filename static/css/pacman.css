@@ -1,0 +1,76 @@
+.back-option{
+    float: left;;
+}
+
+#home{
+    height: 48px;
+    width: 150px;
+    background-color: chartreuse;
+    border: 2px solid black;
+}
+
+#home:hover{
+    background-color: goldenrod;
+}
+
+#home h3{
+    font-size: 15px;
+}
+
+.game{
+    margin-top: 40px;
+    margin-left: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;  /*coz total 28 blocks each of 20px width*/
+    height: 560px; /*coz total 28 blocks each of 20px height*/
+    border: 5px solid black;
+}
+
+.game div{
+    width: 20px;
+    height: 20px;
+}
+
+.food{
+    background-color: green;
+    box-sizing: border-box;
+    transform: scale(0.5);
+}
+
+.wall{
+    background-color: palegreen;
+}
+
+.energy{
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.pac-man{
+    background-image: url(../images/PacMan/Pacman_HD.png);
+}
+
+audio{
+    display: none;
+}
+
+.blinky{
+    background-color: red;
+}
+
+.pinky{
+    background-color: palevioletred;
+}
+
+.inky{
+    background-color: purple;
+}
+
+.clyde{
+    background-color: chartreuse;
+}
+
+.scared-ghost {
+    background-color: aquamarine;
+}
