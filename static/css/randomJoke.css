@@ -1,52 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet');
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    background-color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+body {
+  background-color: #66a5ad;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
-.container{
-  background-color: rgb(142, 92, 189);
-  color: white;
+#home-back-button {
+  background-color: #003b46;
+  box-shadow: 0 10px 20px #c4dfe6;
   border-radius: 10px;
-  padding: 2px 30px;
-  max-width: 100%;
-  width: 650px;
-  height: 350px;
+  color: white;
+  padding: 15px 32px;
   text-align: center;
-  box-shadow:  0 10px 20px rgb(124, 75, 16);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  top: -40%;
+  left: -40%;
 }
-h2{
-    font-size: 2em;
-    margin :0;
-    font-weight: bold;
-    opacity: 0.9;
-    padding: 20px 30px;
+.container {
+  margin: 0;
+  position: absolute;
+  background-color: #07575b;
+  color: #c4dfe6;
+  border-radius: 10px;
+  padding: 40px 30px;
+  width: 700px;
+  height: 400px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  box-shadow: 0 10px 20px #c4dfe6;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
-#joke{
-    font-size: 30px;
-    line-height: 40px;
-    margin: 50px 0;
-    max-width: 600px;
+h2 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: bold;
+  opacity: 0.9;
+  padding: 20px 30px;
 }
-.btn{
-    background-color:  white;
-    color:  rgb(142, 92, 189);
-    border: 0;
-    border-radius: 10px;
-    padding: 10px 30px;
-    font-weight: bold;
-    cursor: pointer;
+#joke {
+  font-size: 30px;
+  line-height: 40px;
+  margin: 50px 0;
+  max-width: 600px;
 }
-.btn:active{
-    transform: scale(0.9);
+.btn {
+  background-color: white;
+  color: #003b46;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-weight: bold;
+  cursor: pointer;
 }
-.btn:focus{
-    outline: 0;
+#new_joke {
+  font-size: 20px;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+.btn:focus {
+  outline: 0;
 }
