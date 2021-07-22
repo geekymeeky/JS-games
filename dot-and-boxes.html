@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dots and Boxes</title>
+    <link rel="shortcut icon" href="./static/images/dot-and-boxes/fav.png" type="image/x-icon">
+    <style>
+        body{
+            font-family:sans-serif ;
+            max-width: 500px;
+            margin: auto;
+            margin-top:1em;
+        }
+        .home{
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .container{
+            text-align: center;
+            font-family:sans-serif;
+        }
+         .title{
+            text-align: center;
+            margin-top: 2em;
+            color:black ;
+        }
+         .subtitle{
+           color:red;
+        }
+        .subtitle:hover{
+            text-decoration: underline;
+        }
+        p{
+            font-weight: 600;
+        }
+        img{
+            height: 20em;
+            width: 20em;
+        }
+        a{
+            text-decoration: none;
+        }
+        span:hover{
+            text-decoration: underline;
+            font-size:large;
+        }
+        .footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: black;
+   text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="./index.html" class="home">Home</a>
+        <h1 class="title">Dot and Boxes<br>
+            (Player and Computer)</h1>
+    <p>1. It is simple game - <span><a href="https://en.wikipedia.org/wiki/Dots_and_Boxes" class="d">Dot and Boxes !</a></span></p>
+    <p>2. See the below image you'll get the idea !</p>
+    <img src="./static/images/dot-and-boxes/Dots_boxes.png" alt="">
+    <p>3. The player who completes the first maximum box will be the <span>WINNER</span> !🏆</p>
+    <h1 class="subtitle" >Lets play...</h1>
+    </div>
+    <script src="./static/js/dot-and-boxes.js"></script>
+    <div class="footer">
+        <p>Developed by <a href="https://github.com/sumitvajarinkar">Sumit Vajarinkar</a></p>
+      </div>
+</body>
+</html>
