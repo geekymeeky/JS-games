@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
 
-
 html[data-theme="light"] {
     --col-icon: black;
     --col-bd-radius:rgb(2, 2, 2);
@@ -13,17 +12,18 @@ html[data-theme="light"] {
      --bg1-color: #fff;
     --shadow-col: rgba(0, 0, 0, 0.3);
   
-  }
-  /* NEW CHNAGES  */
+}
 
 .image{
     width:60px;
     height: 59px;
 }
+
 .image:hover{
     transform: scale(1.2);
     transition: 0.5s all ease-in-out;
 }
+
 .nav-link{
    font-size: 18px;
    width:100%;
@@ -32,6 +32,7 @@ html[data-theme="light"] {
    padding-right: 20%;
     
 }
+
 .nav-item:hover{
     transform: scale(1.2);
     transition: 0.5s all ease-in-out;
@@ -44,8 +45,7 @@ html[data-theme="light"] {
     font-size:30px;
     text-transform: uppercase;
     
-    
-    }
+}
 
 .navbar-brand:hover{
     transform: scale(1.2);
@@ -54,24 +54,7 @@ html[data-theme="light"] {
     padding-left: 9px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  html[data-theme="dark"] {
+html[data-theme="dark"] {
     --col-icon:white;
     --col-bd-radius:black;
     --col-bd-icon:transparent;
@@ -79,9 +62,9 @@ html[data-theme="light"] {
     --col-box-shadow-hover:inset rgba(255, 255, 255, 1) 2px 2px 4px, 
    inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
     --col-white: #fff;
-  }
+}
 
-  .dark_toggler {
+.dark_toggler {
     -webkit-appearance: none;
     position: relative;
     cursor: pointer;
@@ -94,9 +77,9 @@ html[data-theme="light"] {
     transition: background-image 0.9s;
     box-shadow: 0px 2px 5px 1px gray;
     background-color:white;
-  }
+}
  
-  .dark_toggler:before{
+.dark_toggler:before{
     content: "";
     position: absolute;
     top: 0;
@@ -107,20 +90,20 @@ html[data-theme="light"] {
     border-radius: 50px;
     transition: all 0.9s;
     background-color: #f7ca33;
-  }
-  
-  .dark_toggler:checked {
+}
+
+.dark_toggler:checked {
     background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
     transition: background-image 0.9s;
     background-color: #2b2a2A;
-  }
+}
   
-  .dark_toggler:checked:before {
+.dark_toggler:checked:before {
     transform: translate(150%);
     transition: all 0.9s;
     background-color: #ecf0f3;
-  }
-  /* end of dark mode toggle switch button */
+}
+/* end of dark mode toggle switch button */
 
 html {
     background-color: #f6f6f6;
@@ -136,17 +119,23 @@ html[light-mode="dark"] {
     background-color: #2b2a2A;
     transition: background-color .3s;
 }
+
 .dark-theme .jumbotron {
     background-color: #2b2a2A;
     transition: background-color .3s;
 }
+
 .dark-theme .mt-3{
     color:white;
 }
+
 .dark-theme .navbar-nav .nav-link,
-.dark-theme .navbar-brand {
+.dark-theme .navbar-nav .nav-link:hover,
+.dark-theme .navbar-brand ,
+.dark-theme .navbar-brand:hover {
     color:white;
 }
+
 .dark-theme .display-4{
     color: white;
 }
@@ -155,16 +144,15 @@ html[light-mode="dark"] {
     margin-right:30px;
 }
 
-
-
-
 .display-4{
     font-size: 30px;
 }
+
 .game div:hover{
     transform: scale(1.1);
     transition: 1s;
 }
+
 .img{
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
 }
@@ -179,6 +167,7 @@ html[light-mode="dark"] {
     font-size: 30px;
     text-align: center;
 }
+
 #but {
     box-sizing: border-box;
     width: 95px;
@@ -192,23 +181,28 @@ html[light-mode="dark"] {
     font-size: 20px;
     cursor: pointer;
 }
+
 #but:hover{
     background-color: crimson;
 }
+
 #print {
     font-family: Verdana,Geneva, Tahoma, sans-serif;
     color: crimson;
     font-size: 25px;
     font-weight: bold;
 }
+
 #main {
     text-align: center;
 }
+
 #ins {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: dodgerblue;
     font-size: 20px;
 }
+
 canvas{
     width: 100%;
     height: auto;
