@@ -3,7 +3,7 @@ var randomNumber1 = Math.floor(Math.random() * 6) + 1; //1-6
 
 var randomDiceImage = "dice" + randomNumber1 + ".png"; //dice1.png - dice6.png
 
-var randomImageSource = ".static/images/Dice-Game/" + randomDiceImage; //images/dice1.png - images/dice6.png
+var randomImageSource = "./static/images/Dice-Game/" + randomDiceImage; //images/dice1.png - images/dice6.png
 
 var image1 = document.querySelectorAll("img")[0];
 
