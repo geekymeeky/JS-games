@@ -1,29 +1,113 @@
-<!DOCTYPE html><html lang="en">
-    <head>
-        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-        <meta charset="utf-8"><meta content="IE=edge" http-equiv="X-UA-Compatible">
-        <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
-        <title>Flip-Me</title>
-        <link href="./static/css/flips-me.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="static/images/favicon.png">
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="app">
-            <button id="home"><a href="index.html">Back to Home</a></button>
-            <div id="stopwatch-area">
-                <div id="stopwatch">00:00:00</div>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Flip-me Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetchref="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
+    <link rel="stylesheet" href="static/css/flip-me.css">
+</head>
+<body>
+
+    <div class="container">
+</br></br>
+<a class="button" href="index.html">HTML button tag</a>
+</br>
+        <header>
+            <h1>Flip-me Game</h1>
+        </header>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves">0</span> Move(s)
+
+            <div class="timer">
             </div>
-            <button id="personal-best">High Score</button>
-            <div id="opt-area">
-                <button id="level-easy-btn">Easy</button> 
-                <button id="level-medium-btn">Medium</button> 
-                <button id="level-hard-btn">Hard</button>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </section>
+
+        <ul class="deck" id="card-deck">
+            <li class="card" type="folder">
+                <i class="fa fa-folder-open-o"></i>
+            </li>
+            <li class="card" type="laptop">
+                <i class="fa fa-laptop"></i>
+            </li>
+            <li class="card match" type="microphone">
+                <i class="fa fa-microphone"></i>
+            </li>
+            <li class="card" type="sign" >
+                <i class="fa fa-sign-in"></i>
+            </li>
+            <li class="card" type="terminal">
+                <i class="fa fa-terminal"></i>
+            </li>
+            <li class="card match" type="microphone">
+                <i class="fa fa-microphone"></i>
+            </li>
+            <li class="card" type="apple">
+                <i class="fa fa-apple"></i>
+            </li>
+            <li class="card" type="windows">
+                <i class="fa fa-windows"></i>
+            </li>
+            <li class="card" type="folder">
+                <i class="fa fa-folder-open-o"></i>
+            </li>
+            <li class="card" type="Linux ">
+                <i class="fa fa-linux"></i>
+            </li>
+            <li class="card" type="apple">
+                <i class="fa fa-apple"></i>
+            </li>
+            <li class="card" type="Linux ">
+                <i class="fa fa-linux"></i>
+            </li>
+            <li class="card open show" type="sign">
+                <i class="fa fa-sign-in"></i>
+            </li>
+            <li class="card" type="windows">
+                <i class="fa fa-windows"></i>
+            </li>
+            <li class="card" type="laptop">
+                <i class="fa fa-laptop"></i>
+            </li>
+            <li class="card" type="terminal">
+                <i class="fa fa-terminal"></i>
+            </li>
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Congratulations 🎉</h2>
+                <a class="close" href=# >×</a>
+                <div class="content-1">
+                    Congratulations you're a winner 🎉🎉
+                </div>
+                <div class="content-2">
+                    <p>You made <span id=finalMove> </span> moves </p>
+                    <p>in <span id=totalTime> </span> </p>
+                    <p>Rating:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Play again 😄</a>
+                </button>
             </div>
-            <div id="cards-area"></div>
-            <div id="high-scores"></div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-        <script src="./static/js/flips-me.js"></script>
-    </body>
-    </html>
+
+    </div>
+    
+    <script src="static/js/flip-me.js"></script>
+</body>
+</html>
