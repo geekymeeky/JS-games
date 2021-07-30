@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: darkseagreen;
+}
+
+h3{
+    margin-left:50px;
+    margin-bottom: 10px;
+}
+
+p{
+    margin-left:50px;
+}
+
+h2{
+    margin-top: 30px;
+    text-align: center;
+}
+button{
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 50px;
+    border: 2px solid black;
+    margin-bottom: 30px;
+}
+
+button:hover{
+    box-shadow: 0 0 5px #FFFF00,
+                0 0 20px rgb(255 255 0 / 0.8),
+                0 0 35px rgb(255 255 0 / 0.7),
+                0 0 50px rgb(255 255 0 / 0.6);
+    border-color: #fff;
+}
+#game{
+    width: 400px;
+    height: 500px;
+    border: 5px solid black;
+    margin-left: 550px;
+    background-image: url(../images/Fall_game/background.png);
+}
+
+#character{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: deeppink;
+    position: relative;
+    top: 200px;
+    left: 150px;
+    /*To make sure ball is always on top*/
+    z-index: 1000000;
+    box-shadow: 0 0 5px #FFFF00,
+                0 0 20px rgb(255 255 0 / 0.8),
+                0 0 35px rgb(255 255 0 / 0.7),
+                0 0 50px rgb(255 255 0 / 0.6);
+    border-color: #fff;
+}
+
+.block{
+    width: 400px;
+    height: 20px;
+    background-image: url(../images/Fall_game/brick.jpg);
+    position: relative;
+    margin-top: -20px;
+    top: 100px;
+}
+.hole{
+    width: 40px;
+    height: 20px;
+    background-image: url(../images/Fall_game/background.png);
+    margin-top: -20px;
+    top: 100px;
+    position: relative; /*Imp for the hole to move*/
+}
