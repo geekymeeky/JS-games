@@ -2,13 +2,12 @@
 
 <h2>Introduction🤩</h2>
 
-<p>JS-games is an exciting web application which keeps you updated of the Javascript based fun games, lightens up your mood 
-by letting you enjoy the addictive games, and provides an amazing visualisation.</p>
+<p>JS-games is an exciting web application that keeps you updated on Javascript-based fun games, lightens up your mood by letting you enjoy the addictive games, and provides an amazing visualization.</p>
 
 <h2>Features✨</h2>
 <ul>
- <li>User Friendly Interface</li>
- <li>Efficient and time saving</li>
+ <li>User-Friendly Interface</li>
+ <li>Efficient and time-saving</li>
  <li>Minimal requirements needed</li>
  <li>Accessible from anywhere and anytime</li>
  <li>Eligible for all age groups</li>
@@ -16,8 +15,7 @@ by letting you enjoy the addictive games, and provides an amazing visualisation.
 
 <h2>Workflow📌</h2>
 
-<p>The JS-games keeps you updated about the computer games and is an interesting way for everyone to showcase their skills in building games. There are various games available in <a href style="color:green">https://geekymeeky.github.io/JS-games/</a>. The most amazing feature is that the games available are very easy to play on just a simple click.
-You can view different types of games in the webpage and play them as many times you want.</p>
+<p>The JS games keep you updated about computer games and are an interesting way for everyone to showcase their skills in building games.There are various games available in <a href style="color:green">https://geekymeeky.github.io/JS-games/</a>. The most amazing feature is that the games available are very easy to play with just a simple click. You can view different types of games on the webpage and play them as many times as you want.</p>
 
 <h2>How it helps the community🌼</h2>
 <ul>
