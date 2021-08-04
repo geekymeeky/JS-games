@@ -20,14 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
        {
         const square = document.createElement('div')
         square.setAttribute('draggable', true)
-
         square.setAttribute('id', i)
         let randomColor = Math.floor(Math.random() * candyColors.length)
         square.style.backgroundImage = candyColors[randomColor]
         grid.appendChild(square)
         squares.push(square)
+       }
         
-      }
      
     }
     createBoard()
