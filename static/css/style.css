@@ -78,10 +78,11 @@ html[data-theme="dark"] {
 .dark_toggler:before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 40px;
-  width: 30px;
+  top: 10;
+  right: 5;
+  left: 5;
+  height: 20px;
+  width: 20px;
   background-color: white;
   border-radius: 50px;
   transition: all 0.9s;
