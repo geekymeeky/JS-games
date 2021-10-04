@@ -35,7 +35,7 @@ body {
   border-radius: 10px;
   padding: 40px 30px;
   width: 700px;
-  height: 400px;
+  height: 420px;
   align-items: center;
   justify-items: center;
   text-align: center;
@@ -53,12 +53,19 @@ h2 {
   padding: 20px 30px;
 }
 #joke {
+  position: absolute;
+  left: 7%;
+  top: 20%;
   font-size: 30px;
   line-height: 40px;
   margin: 50px 0;
   max-width: 600px;
 }
 .btn {
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  margin-bottom: 15px;
   background-color: white;
   color: #003b46;
   border: 0;
