@@ -1,84 +1,89 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    cursor: none; /*to dissapear the cursor arrow*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  cursor: none; /*to dissapear the cursor arrow*/
 }
 #whack-board {
-    color: white;       /*text color*/
-    background-color: darkgreen;      /*aligning everything to horizontal center*/
-    justify-self: center;
+  color: white; /*text color*/
+  background-color: darkgreen; /*aligning everything to horizontal center*/
+  justify-self: center;
 }
-.heading{
-    font-size: 40px;
-    text-align: center;
-    padding: 40px;
+.heading {
+  font-size: 40px;
+  text-align: center;
+  padding: 40px;
 }
-.score{
-    font-size: 20px;
-    text-align: center;
-    padding: 20px;
+.score {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
 }
-#hole-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#hole-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.holes{
-    display: grid;  
-    grid-template-columns: repeat(3,1fr);       /*3 columns each equal in length*/
-    grid-gap: 50px;
-    justify-items: center;
+.holes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*3 columns each equal in length*/
+  grid-gap: 50px;
+  justify-items: center;
 }
-.hole{
-    position: relative;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: black;
-    overflow: hidden;               /*so that img does not come little bit also, outside of the hole*/
+.hole {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: black;
+  overflow: hidden; /*so that img does not come little bit also, outside of the hole*/
 }
-.mole{
-    position: absolute;
-    z-index: 1;                     /*so that it sets on top of the hole*/
-    height: 80px;
+.mole {
+  position: absolute;
+  z-index: 1; /*so that it sets on top of the hole*/
+  height: 80px;
+  bottom: 0;
+  transform: translateX(10%); /*to horizontally align img*/
+  animation: peep 0.3s linear;
+  pointer-events: none; /*so that it isn't clickable*/
+}
+@keyframes peep {
+  /*peep is the animation we declared for moles*/
+  from {
+    bottom: -60px; /*height is 60px, so -60px*/
+  }
+  to {
     bottom: 0;
-    transform: translateX(10%);     /*to horizontally align img*/
-    animation: peep 0.3s linear;
-    pointer-events: none;           /*so that it isn't clickable*/
+  }
 }
-@keyframes peep{                    /*peep is the animation we declared for moles*/
-    from{
-        bottom: -60px;              /*height is 60px, so -60px*/
-    }
-    to{
-        bottom: 0;
-    }
+@keyframes hit {
+  /*when to hit the mole the banner will bend a bit*/
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-30deg);
+  }
 }
-@keyframes hit{ /*when to hit the mole the banner will bend a bit*/
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(-30deg);
-    }
+.buttons {
+  text-align: center;
+  margin-top: 30px;
 }
-.buttons{
-    text-align: center;
-    margin-top: 30px;
+.buttons button {
+  padding: 15px 45px;
+  border: 5px solid black;
+  border-radius: 5px;
 }
-.buttons button{
-    padding: 15px 45px;
-    border: 5px solid black;
-    border-radius: 5px;
+button.stop {
+  display: none;
 }
-button.stop{
-    display: none;
-}
-.cursor img{
-    position: absolute;
-    z-index: 2;
-    transform: translate(-10px, -40px); /*coz we want the cursor arrow to be exactly with the img*/ 
-    pointer-events: none; /*to make the img with cursor clickable*/
+.cursor img {
+  position: absolute;
+  z-index: 2;
+  transform: translate(
+    -10px,
+    -40px
+  ); /*coz we want the cursor arrow to be exactly with the img*/
+  pointer-events: none; /*to make the img with cursor clickable*/
 }
