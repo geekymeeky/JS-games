@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js' type="text/javascript" charset="utf-8"></script> -->
+    <script src='scripts/jquery.js' type="text/javascript" charset="utf-8"></script>
+    <script src='scripts/globals.js' type="text/javascript" charset="utf-8"></script>
+    <script src='scripts/classes.js' type="text/javascript" charset="utf-8"></script>
+    <script src='scripts/game-script.js' type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class='overlay'></div>
+    <div class='info-wrapper'>
+        <p class='display-info' id='player-name'></p>
+        <p class='display-info' id='level'></p>
+        <p class='display-info' id='life'></p>
+        <p class='display-info' id='score'></p>
+        <p class='display-info' id='time'></p>
+    </div>
+
+    <div class='flex-container main-container game-container'>
+        <div class='column column-1'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-2'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-3'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-4'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-5'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-6'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-7'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-8'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-9'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell start beginning cell-17' data-isallowed='yes' id='frogger'></div>
+        </div>
+        <div class='column column-10'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-11'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-12'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-13'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-14'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-15'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-16'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+        <div class='column column-17'>
+            <div class='cell finish cell-1' data-isallowed='yes'></div>
+            <div class='cell river cell-2' data-isallowed='no'></div>
+            <div class='cell river cell-3' data-isallowed='no'></div>
+            <div class='cell river cell-4' data-isallowed='no'></div>
+            <div class='cell river cell-5' data-isallowed='no'></div>
+            <div class='cell river cell-6' data-isallowed='no'></div>
+            <div class='cell river cell-7' data-isallowed='no'></div>
+            <div class='cell river cell-8' data-isallowed='no'></div>
+            <div class='cell midway cell-9' data-isallowed='yes'></div>
+            <div class='cell street cell-10' data-isallowed='yes'></div>
+            <div class='cell street cell-11' data-isallowed='yes'></div>
+            <div class='cell street cell-12' data-isallowed='yes'></div>
+            <div class='cell street cell-13' data-isallowed='yes'></div>
+            <div class='cell street cell-14' data-isallowed='yes'></div>
+            <div class='cell street cell-15' data-isallowed='yes'></div>
+            <div class='cell street cell-16' data-isallowed='yes'></div>
+            <div class='cell beginning cell-17' data-isallowed='yes'></div>
+        </div>
+
+    </div>
+
+    <div class='popup popup-win'>
+        <h3 class='popup-header'>Cogratulations! You have completed the level <span id='win-popup-level'></span></h3>
+        <p class='popup-body'>Click the button below to go the next level!</p>
+        <button class='action-button' id='next-round'>Next Level</button>
+    </div>
+
+    <div class='popup popup-loss'>
+        <h3 class='popup-header'>Sorry! You lost at level <span id='loss-popup-level'></h3>
+    <p class='popup-body'>Click the button below to restart from level 1!</p>
+    <button class='action-button' id='start-over'>Start Over</button>
+  </div>
+
+</body>
+</html>

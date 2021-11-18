@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+* {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    /*background: url(../assets/images/frog-lake.jpg) no-repeat center center fixed;*/
+    background: rgb(76, 58, 153);
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: space-around;
+}
+
+.main-container {
+    height: 50vh;
+    width: 50vh;
+    position: relative;
+    top: 0.25vh;
+    margin: 0 auto;
+}
+
+.game-container {
+    border: 0.25vh solid rgb(66, 55, 160);
+    box-shadow: 0 0 30px 30px rgba(24, 112, 134, 0.3);
+    transition: all 0.3s ease-in-out;
+    animation: glow 5s linear infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 30px 30px rgba(220, 220, 220, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 30px 30px rgba(220, 220, 220, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 30px 30px rgba(220, 220, 220, 0.3);
+    }
+}
+
+.column {
+    height: calc(100% / 17);
+    width: 100%;
+}
+
+.cell {
+    /*border-radius: 3px;*/
+    min-height: 100%;
+    min-width: calc(100% / 17);
+}
+
+.beginning,
+.midway,
+.finish {
+    background: rgb(48 39 67);
+}
+
+.river {
+    background: rgb(101, 163, 184);
+}
+
+.street {
+    background: rgb(185, 180, 170);
+}
+
+#frogger,
+.frogger {
+    background: rgba(38, 233, 87, 0.671);
+}
+
+.log {
+    background: rgba(175, 108, 8, 0.795);
+}
+
+.truck {
+    background: rgba(77, 3, 13, 0.445);
+}
+
+.truck_1 {
+    background: url('../assets/images/truck.png') no-repeat left center;
+    background-size: 300% 100%;
+}
+
+.truck_2 {
+    background: url('../assets/images/truck.png') no-repeat center center;
+    background-size: 300% 100%;
+}
+
+.truck_3 {
+    background: url('../assets/images/truck.png') no-repeat right center;
+    background-size: 300% 100%;
+}
+
+.user-form {
+    height: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-text {
+    border-radius: 10px;
+    color: #ffffff9e;
+    background: rgb(255 255 255 / 60%);
+    line-height: 2em;
+    font-size: 20px;
+    min-width: 22vw;
+}
+
+.index-container {
+    border: 4px solid white;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 5px rgba(134, 240, 139, 0.521);
+    transition: all 0.3s ease-in-out;
+    height: auto;
+    width: auto;
+}
+
+.index-container:hover {
+    animation: shadow-glow 3s linear infinite;
+}
+
+@keyframes shadow-glow {
+    0% {
+        box-shadow: 0 5px 5px 15px rgba(21, 98, 214, 0.9);
+    }
+    50% {
+        box-shadow: 0 5px 5px 15px rgba(21, 98, 214, 0.9);
+    }
+    100% {
+        box-shadow: 0 5px 5px 15px rgba(21, 13, 63, 0.5);
+    }
+}
+
+.wrapper {
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frog-character {
+    background: url(../assets/images/frog.png);
+    background-size: 22vh 22vh;
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+    z-index: -10;
+}
+
+.game-title {
+    margin: 0;
+    text-align: center;
+    font-size: 64px;
+    color: rgb(18, 60, 77);
+    max-height: 20vh;
+}
+
+.submit-button {
+    margin: 20px;
+    padding: 5px;
+    min-width: 200px;
+    background: rgb(76, 58, 153);
+    border-radius: 22px;
+    font-size: 25px;
+    color: white;
+}
+
+.info-wrapper {
+    width: 20vw;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.display-info {
+    font-weight: 300;
+    color: white;
+    font-size: 18px;
+}
+
+.overlay {
+    /*z-index: -10;*/
+    height: 80vh;
+    width: 80vw;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.popup {
+    width: 90%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0.95);
+    margin: 0 auto;
+    display: none;
+    color: rgb(80, 122, 78);
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .input-text {
+        border-radius: 5px;
+        line-height: 1em;
+        font-size: 18px;
+        min-width: 10vw;
+    }
+    .submit-button {
+        margin: 10px;
+        padding: 0px;
+        min-width: 100px;
+        background: rgb(66, 55, 160);
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    .main-container {
+        height: 80vh;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main-container {
+        margin: 0 20px 0 0;
+        float: right;
+    }
+}
+
+@media (max-height: 500px) {
+    .main-container {
+        margin: 0 40px 0 0;
+        float: right;
+    }
+}
