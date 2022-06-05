@@ -212,6 +212,12 @@ canvas {
   height: auto;
 }
 
+.game img{
+
+  object-fit: contain; object-position: left bottom;
+  align-self: center;
+}
+
 /* .img-desc {
   text-align: center;
 } */
