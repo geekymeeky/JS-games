@@ -6,17 +6,24 @@
   "scripts": {
     "start": "npm run lite",
     "lite": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Srijan Gupta",
   "license": "ISC",
   "dependencies": {
+    "@testing-library/dom": "^9.3.0",
     "bootstrap": "^4.6.0",
+    "dom-storage": "^2.1.0",
     "font-awesome": "^4.7.0",
+    "jest": "^29.5.0",
     "jquery": "^3.5.1",
+    "jsdom": "^22.0.0",
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babel-jest": "^29.5.0",
     "lite-server": "^2.6.1"
   }
 }
